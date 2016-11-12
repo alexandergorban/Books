@@ -1,14 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Data;
+﻿using Books.Entities;
+using Books.Web.DataContexts;
 using System.Data.Entity;
 using System.Linq;
 using System.Net;
 using System.Threading.Tasks;
-using System.Web;
 using System.Web.Mvc;
-using Books.Entities;
-using Books.Web.DataContexts;
 
 namespace Books.Web.Controllers
 {
@@ -18,9 +14,9 @@ namespace Books.Web.Controllers
         private BooksDb db = new BooksDb();
 
         // GET: Books
-        public async Task<ActionResult> Index()
+        public ActionResult Index()
         {
-            return View(await db.Books.ToListAsync());
+            return View(db.Books.ToList());
         }
 
         // GET: Books/Details/5
