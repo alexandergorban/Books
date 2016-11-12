@@ -11,6 +11,12 @@ namespace Books.Web.DataContexts
             Database.Log = sql => Debug.Write(sql);
         }
 
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+            modelBuilder.HasDefaultSchema("library");
+            base.OnModelCreating(modelBuilder);
+        }
+
         public DbSet<Book> Books { get; set; }
     }
 }

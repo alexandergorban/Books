@@ -196,12 +196,20 @@
     <Compile Include="DataContexts\BookMigrations\201611101444285_InitialCreate.Designer.cs">
       <DependentUpon>201611101444285_InitialCreate.cs</DependentUpon>
     </Compile>
+    <Compile Include="DataContexts\BookMigrations\201611122151355_DefaultShema.cs" />
+    <Compile Include="DataContexts\BookMigrations\201611122151355_DefaultShema.Designer.cs">
+      <DependentUpon>201611122151355_DefaultShema.cs</DependentUpon>
+    </Compile>
     <Compile Include="DataContexts\BookMigrations\Configuration.cs" />
     <Compile Include="DataContexts\BooksDb.cs" />
     <Compile Include="DataContexts\IdentityDb.cs" />
     <Compile Include="DataContexts\IdentityMigrations\201611100749190_InitialCreate.cs" />
     <Compile Include="DataContexts\IdentityMigrations\201611100749190_InitialCreate.Designer.cs">
       <DependentUpon>201611100749190_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataContexts\IdentityMigrations\201611122153085_DefaultShema.cs" />
+    <Compile Include="DataContexts\IdentityMigrations\201611122153085_DefaultShema.Designer.cs">
+      <DependentUpon>201611122153085_DefaultShema.cs</DependentUpon>
     </Compile>
     <Compile Include="DataContexts\IdentityMigrations\Configuration.cs" />
     <Compile Include="GlimpseSecurityPolicy.cs" />
@@ -310,8 +318,14 @@
     <EmbeddedResource Include="DataContexts\BookMigrations\201611101444285_InitialCreate.resx">
       <DependentUpon>201611101444285_InitialCreate.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="DataContexts\BookMigrations\201611122151355_DefaultShema.resx">
+      <DependentUpon>201611122151355_DefaultShema.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DataContexts\IdentityMigrations\201611100749190_InitialCreate.resx">
       <DependentUpon>201611100749190_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataContexts\IdentityMigrations\201611122153085_DefaultShema.resx">
+      <DependentUpon>201611122153085_DefaultShema.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
